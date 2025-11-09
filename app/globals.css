@@ -1,0 +1,25 @@
+:root{--bg:#0b0f19;--card:#131a2a;--muted:#8aa0b8;--text:#e6edf3;--accent:#7c9cff;--accent-2:#a78bfa;--border:#23324a}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; color:var(--text); background:radial-gradient(1200px 800px at 80% -10%, rgba(124,156,255,.08), transparent), radial-gradient(1000px 700px at -10% 10%, rgba(167,139,250,.08), transparent), var(--bg)}
+.container{max-width:960px;margin:0 auto;padding:32px}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 10px 30px rgba(124,156,255,.35)}
+.title{font-weight:700;font-size:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:840px){.grid{grid-template-columns:1fr}}
+.label{display:block;margin:8px 0 6px;color:var(--muted);font-size:13px}
+.input,.textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#0e1526;color:var(--text)}
+.textarea{min-height:110px;resize:vertical}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;border:1px solid var(--border);background:#0e1526;font-size:13px;cursor:pointer}
+.badge input{margin:0}
+.actions{display:flex;gap:12px;margin-top:16px}
+.button{appearance:none;border:1px solid var(--border);background:linear-gradient(135deg,#203055,#1a2540);color:var(--text);padding:12px 16px;border-radius:12px;cursor:pointer}
+.button.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));border:none;color:#0b0f19;font-weight:700}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Monospace}
+.section-title{margin:20px 0 10px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.result{white-space:pre-wrap;background:#0c1221;border:1px solid var(--border);padding:14px;border-radius:12px}
+.copy{background:#0e1526;border:1px solid var(--border);border-radius:10px;padding:8px 10px;font-size:12px;cursor:pointer;color:var(--muted)}
+.small{font-size:12px;color:var(--muted)}
